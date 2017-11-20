@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>荣威RX3</title>
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="keywords" content="荣威，汽车，rongwei，荣威RX3"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <script src="js/jquery3.2.1.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/photo-sphere-viewer.min.js"></script>
+    <script src="http://miniactive.ifeng.com/2017/car/index.php"></script>
+</head>
+<body>
+<article class="wrapAll">
+    <section class="header">
+        <img class="logo" src="img/logo-rw.png"/>
+        <img class="header-title" src="img/header-text-yzyl.png"/>
+        <img class="manufacturer-text" src="img/manufacturer-text.png"/>
+    </section>
+    <section class="video-area">
+        <div class="video-box">
+            <img class="video-img" src="img/video-box-bg.jpg"/>
+           <!-- <img class="video-img" src="img/videoWaiting.jpg"/>-->
+            <img  class="video-play-btn" src="img/video-playBtn.png" rel="http://ips.ifeng.com/video19.ifeng.com/video09/2017/11/15/14106848-102-009-134517.mp4" />
+        </div>
+    </section>
+    <section class="carImgs-area">
+        <div class="cars-box">
+            <div class="imgsBox">
+                <img class="changeImg" src="img/hong_se.0000.png"/>
+            </div>
+            <div class="btnBox">
+                <div class="carColors">
+                    <a class="outer-color1" href="javascript:;"></a>
+                    <a class="outer-color2" href="javascript:;"></a>
+                    <a class="outer-color3" href="javascript:;"></a>
+                    <a class="outer-color4" href="javascript:;"></a>
+                    <a class="outer-color5" href="javascript:;"></a>
+                    <a class="outer-color6" href="javascript:;"></a>
+                </div>
+                <div class="innerColors">
+                    <a class="inner-redC" href="javascript:;"></a>
+                    <a class="inner-blackC" href="javascript:;"></a>
+                    <a class="inner-beigeC" href="javascript:;"></a>
+                </div>
+                <div class="inner-btn" mode="outer">
+                    <a href="javascript:;">
+                        <span></span>
+                        <span></span>
+                        <span class="innerBg"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="container"></div>
+        </div>
+    </section>
+    <section class="type-area">
+        <img class="titles" src="img/title-type.png"/>
+        <div class="click-itemBox typeClickBox">
+            <div class="click-item1"></div>
+            <div class="click-item2"></div>
+            <div class="click-item3"></div>
+            <div class="click-item4"></div>
+            <div class="click-item5"></div>
+        </div>
+    </section>
+    <section class="power-area">
+        <img class="titles" src="img/title-power.png"/>
+        <div class="click-itemBox powerClickBox">
+            <div class="click-item1"></div>
+            <div class="click-item2"></div>
+            <div class="click-item3"></div>
+            <div class="click-item4"></div>
+            <div class="click-item5"></div>
+        </div>
+    </section>
+    <section class="interactive-area">
+        <img class="titles" src="img/title-interactive.png"/>
+        <div class="click-itemBox interactiveClickBox">
+            <div class="click-item1"></div>
+        </div>
+    </section>
+    <section class="leapfrog-area">
+        <img class="titles" src="img/title-leapfrog.png"/>
+        <div class="click-itemBox leapfrogClickBox">
+            <div class="click-item1"></div>
+            <div class="click-item2"></div>
+            <div class="click-item3"></div>
+        </div>
+    </section>
+    <section class="security-area">
+        <img class="titles" src="img/title-security.png"/>
+        <div class="click-itemBox securityClickBox">
+            <div class="click-item1"></div>
+            <div class="click-item2"></div>
+            <div class="click-item3"></div>
+            <div class="click-item4"></div>
+        </div>
+    </section>
+    <section class="orderTryDrive-area">
+        <img class="titles" src="img/title-orderTryDrive.png"/>
+        <div class="formBox">
+            <label class="name" for="name">
+                <input id="name" type="text"/>
+            </label>
+            <label class="tel" for="tel">
+                <input id="tel" type="text"/>
+            </label>
+            <label class="province" for="province">
+                <select id="province"></select>
+            </label>
+            <label class="city" for="city">
+                <select id="city"></select>
+            </label>
+            <label class="submit" for="submit">
+                <input  id="submit" type="button" />
+            </label>
+        </div>
+    </section>
+</article>
+<div class="videoBox">
+    <video class="videoComponent" width="100%" -webkit-playsinline="" controls="controls" poster="">
+        <source src="" type="video/mp4"/>
+    </video>
+</div>
+<div class="swiper-popBox">
+    <div class="typeCycle-box swipers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/type-img5.png"/>
+                <h3>悬浮展翼格栅</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/type-img2.png"/>
+                <h3 style="text-indent:-90px;">17寸精车双色铝合金轮毂 </h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/type-img4.png"/>
+                <h3 style="text-indent:-93px;">电动折叠外后视镜(带电加热)</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/type-img3.png"/>
+                <h3>电吉他光幕尾灯   </h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/type-img1.png"/>
+                <h3>飞云大灯</h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <a href="javascript:;" class="swiper-button-prev type-prev-btn" style="left:68px;"></a>
+        <a href="javascript:;" class="swiper-button-next type-next-btn"></a>
+        <a href="javascript:;" class="popCloseBtn">X</a>
+    </div>
+    <div class="powerSwiper-box swipers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/power-popImg3.png"/>
+                <h3 class="text-left small-font">真皮多功能方向盘/3.5英寸TFT彩色交互行车屏</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/power-popImg4.png"/>
+                <h3 style="text-indent:-100px;">Push Start 一键智能启动</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/power-popImg1.png"/>
+                <h3>高级智能钥匙</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/power-popImg5.png"/>
+                <h3 class="two-line small-font" style="margin-left:-78px;">1.3TDI双喷射涡轮增压发动机<br/> +爱信全新第三代6AT变速箱   </h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/power-popImg2.png"/>
+                <h3 style="text-indent:-50px;">AUTOHOLD自动驻车 </h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <a href="javascript:;" class="swiper-button-prev type-prev-btn" style="left:60px;"></a>
+        <a href="javascript:;" class="swiper-button-next type-next-btn" style="right:70px;"></a>
+        <a href="javascript:;" class="popCloseBtn">X</a>
+    </div>
+    <div class="interactiveSwiper-box swipers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/interactive-popImg1.png"/>
+                <h3 style="text-indent:-200px;">互联网汽车智能系统／8英寸高清触控电容屏    </h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <a href="javascript:;" class="swiper-button-prev type-prev-btn"></a>
+        <a href="javascript:;" class="swiper-button-next type-next-btn"></a>
+        <a href="javascript:;" class="popCloseBtn">X</a>
+    </div>
+    <div class="leapfrogSwiper-box swipers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/leapfrog-popImg3.png"/>
+                <h3>超大尺寸后备空间</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/leapfrog-popImg2.png"/>
+                <h3 class="text-left" style="text-indent:132px;">I-MAX超大尺寸智能防夹全景天窗</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/leapfrog-popImg1.png"/>
+                <h3 class="text-left" style="text-indent:120px;">驾驶座椅电动6向调节/前排座椅加热 </h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <a href="javascript:;" class="swiper-button-prev type-prev-btn"></a>
+        <a href="javascript:;" class="swiper-button-next type-next-btn"></a>
+        <a href="javascript:;" class="popCloseBtn">X</a>
+    </div>
+    <div class="securitySwiper-box swipers">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/security-popImg2.png"/>
+                <h3 style="text-indent:-104px;">倒车影像(带动态泊车辅助线）</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/security-popImg1.png"/>
+                <h3 class="two-line" style="text-align:left;text-indent:66px;">前麦弗逊式独立悬挂/后扭转梁半独立悬挂</h3>
+                <h3 style="line-height:28px; text-indent:-80px;">超高强度钢结构笼式车身</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/security-popImg3.png"/>
+                <h3 class="two-line;" style="text-indent:-100px;line-height:28px;margin-top:10px;">博世第九代ESP电子稳定程序</h3>
+                <h3 style="line-height:28px;text-indent:-54px;">/HAS上坡辅助系统</h3>
+                <h3 style="line-height:28px;text-indent:-246px;">HDC陡坡缓降系统/TPMS胎压监测</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/security-popImg4.png"/>
+                <h3>全车6安全气囊</h3>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <a href="javascript:;" class="swiper-button-prev type-prev-btn" style="left:48px;"></a>
+        <a href="javascript:;" class="swiper-button-next type-next-btn" style="right:80px;"></a>
+        <a href="javascript:;" class="popCloseBtn">X</a>
+    </div>
+</div>
+<!--js-->
+<script>
+    /*playVideo start*/
+    playVideo($('.video-play-btn'));
+    function playVideo(obj) {
+        var rel='';
+        obj.on('click',function (ev) {
+            rel=$(this).attr('rel');
+            if(rel){
+                $('.videoComponent').fadeIn().attr('src',rel);
+                $('.videoComponent')[0].play();
+                $('.videoComponent').on('pause',function (ev) {
+                    $('.videoComponent')[0].pause();
+                    $('.videoComponent').fadeOut();
+                });
+                $('.videoComponent').on('play',function (ev) {
+                    $('.videoComponent').fadeIn();
+                    $('.videoComponent')[0].play();
+                });
+                $('.videoComponent').on('ended',function (ev) {
+                    $('.videoComponent').fadeOut().attr('src','');
+                    rel = '';
+                });
+            }
+        });
+    }
+    /*playVideo end*/
+
+    /*初步表单校验 start*/
+
+
+    /*渲染表单 start*/
+    setFormData()
+    function setFormData() {
+        var provinceArr = province_arr.split(',');
+        var len = provinceArr.length;
+        if(!$('#province').val()){
+            for(var i=0;i<len;i++){
+                var option = $('<option>'+provinceArr[i]+'</option>');
+                option.appendTo($('#province'));
+            }
+        }
+        var cityArr = city_arr[$('#province').val()].split(',');
+        var cityLen = cityArr.length;
+        $('#city').empty();
+        for(var i=0;i<cityLen;i++){
+            var option = $('<option>'+cityArr[i]+'</option>');
+            option.appendTo($('#city'));
+        }
+
+    };
+
+
+    $('#province').on('change',function (ev) {
+       setFormData();
+    });
+    /*渲染表单 end*/
+
+
+
+    $('#submit').on('click',function (ev) {
+        var $nameVal = $('#name').val().trim();
+        var $telVal = $('#tel').val().trim();
+       if($nameVal===''){
+           alert('请填写姓名!');
+           $('#name').focus();
+           return false;
+       }else if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test($telVal))){
+           alert('请填写正确的手机号码!');
+           $('#tel').focus();
+           return false;
+       }else{
+           alert('提交成功');
+       }
+    });
+    /*初步表单校验 end*/
+
+    /*360旋转 start*/
+    var iNow = 0;//用于设置当前图片的索引
+    var startX = 0;//用于判断手指左滑动还是右滑动
+
+    //下面是不同颜色对应的车图片
+    var redImgArr = [
+        'img/hong_se.0000.png',
+        'img/hong_se.0001.png',
+        'img/hong_se.0002.png',
+        'img/hong_se.0003.png',
+        'img/hong_se.0004.png',
+        'img/hong_se.0005.png',
+        'img/hong_se.0006.png',
+        'img/hong_se.0007.png',
+        'img/hong_se.0008.png',
+        'img/hong_se.0009.png',
+        'img/hong_se.0010.png',
+        'img/hong_se.0011.png',
+        'img/hong_se.0012.png',
+        'img/hong_se.0013.png',
+        'img/hong_se.0014.png',
+        'img/hong_se.0015.png',
+        'img/hong_se.0016.png',
+        'img/hong_se.0017.png',
+        'img/hong_se.0018.png',
+        'img/hong_se.0019.png',
+        'img/hong_se.0020.png',
+        'img/hong_se.0021.png',
+        'img/hong_se.0022.png',
+        'img/hong_se.0023.png',
+        'img/hong_se.0024.png',
+        'img/hong_se.0025.png',
+        'img/hong_se.0026.png',
+        'img/hong_se.0027.png',
+        'img/hong_se.0028.png',
+        'img/hong_se.0029.png',
+        'img/hong_se.0030.png',
+        'img/hong_se.0031.png',
+        'img/hong_se.0032.png',
+        'img/hong_se.0033.png',
+        'img/hong_se.0034.png',
+        'img/hong_se.0035.png',
+        'img/hong_se.0036.png',
+        'img/hong_se.0037.png',
+        'img/hong_se.0038.png',
+        'img/hong_se.0039.png',
+        'img/hong_se.0040.png',
+        'img/hong_se.0041.png',
+        'img/hong_se.0042.png',
+        'img/hong_se.0043.png',
+        'img/hong_se.0044.png',
+        'img/hong_se.0045.png',
+        'img/hong_se.0046.png',
+        'img/hong_se.0047.png',
+        'img/hong_se.0048.png',
+        'img/hong_se.0049.png',
+        'img/hong_se.0050.png',
+        'img/hong_se.0051.png',
+        'img/hong_se.0052.png',
+        'img/hong_se.0053.png',
+        'img/hong_se.0054.png',
+        'img/hong_se.0055.png',
+        'img/hong_se.0056.png',
+        'img/hong_se.0057.png',
+        'img/hong_se.0058.png',
+        'img/hong_se.0059.png',
+        'img/hong_se.0060.png',
+        'img/hong_se.0061.png',
+        'img/hong_se.0062.png',
+        'img/hong_se.0063.png',
+        'img/hong_se.0064.png',
+        'img/hong_se.0065.png',
+        'img/hong_se.0066.png',
+        'img/hong_se.0067.png',
+        'img/hong_se.0068.png',
+        'img/hong_se.0069.png',
+        'img/hong_se.0070.png',
+        'img/hong_se.0071.png'
+    ];
+    var blackImgArr = [
+        'img/hei_se.0000.png',
+        'img/hei_se.0001.png',
+        'img/hei_se.0002.png',
+        'img/hei_se.0003.png',
+        'img/hei_se.0004.png',
+        'img/hei_se.0005.png',
+        'img/hei_se.0006.png',
+        'img/hei_se.0007.png',
+        'img/hei_se.0008.png',
+        'img/hei_se.0009.png',
+        'img/hei_se.0010.png',
+        'img/hei_se.0011.png',
+        'img/hei_se.0012.png',
+        'img/hei_se.0013.png',
+        'img/hei_se.0014.png',
+        'img/hei_se.0015.png',
+        'img/hei_se.0016.png',
+        'img/hei_se.0017.png',
+        'img/hei_se.0018.png',
+        'img/hei_se.0019.png',
+        'img/hei_se.0020.png',
+        'img/hei_se.0021.png',
+        'img/hei_se.0022.png',
+        'img/hei_se.0023.png',
+        'img/hei_se.0024.png',
+        'img/hei_se.0025.png',
+        'img/hei_se.0026.png',
+        'img/hei_se.0027.png',
+        'img/hei_se.0028.png',
+        'img/hei_se.0029.png',
+        'img/hei_se.0030.png',
+        'img/hei_se.0031.png',
+        'img/hei_se.0032.png',
+        'img/hei_se.0033.png',
+        'img/hei_se.0034.png',
+        'img/hei_se.0035.png',
+        'img/hei_se.0036.png',
+        'img/hei_se.0037.png',
+        'img/hei_se.0038.png',
+        'img/hei_se.0039.png',
+        'img/hei_se.0040.png',
+        'img/hei_se.0041.png',
+        'img/hei_se.0042.png',
+        'img/hei_se.0043.png',
+        'img/hei_se.0044.png',
+        'img/hei_se.0045.png',
+        'img/hei_se.0046.png',
+        'img/hei_se.0047.png',
+        'img/hei_se.0048.png',
+        'img/hei_se.0049.png',
+        'img/hei_se.0050.png',
+        'img/hei_se.0051.png',
+        'img/hei_se.0052.png',
+        'img/hei_se.0053.png',
+        'img/hei_se.0054.png',
+        'img/hei_se.0055.png',
+        'img/hei_se.0056.png',
+        'img/hei_se.0057.png',
+        'img/hei_se.0058.png',
+        'img/hei_se.0059.png',
+        'img/hei_se.0060.png',
+        'img/hei_se.0061.png',
+        'img/hei_se.0062.png',
+        'img/hei_se.0063.png',
+        'img/hei_se.0064.png',
+        'img/hei_se.0065.png',
+        'img/hei_se.0066.png',
+        'img/hei_se.0067.png',
+        'img/hei_se.0068.png',
+        'img/hei_se.0069.png',
+        'img/hei_se.0070.png',
+        'img/hei_se.0071.png'
+    ];
+    var blueImgArr = [
+        'img/lan_se.0000.png',
+        'img/lan_se.0001.png',
+        'img/lan_se.0002.png',
+        'img/lan_se.0003.png',
+        'img/lan_se.0004.png',
+        'img/lan_se.0005.png',
+        'img/lan_se.0006.png',
+        'img/lan_se.0007.png',
+        'img/lan_se.0008.png',
+        'img/lan_se.0009.png',
+        'img/lan_se.0010.png',
+        'img/lan_se.0011.png',
+        'img/lan_se.0012.png',
+        'img/lan_se.0013.png',
+        'img/lan_se.0014.png',
+        'img/lan_se.0015.png',
+        'img/lan_se.0016.png',
+        'img/lan_se.0017.png',
+        'img/lan_se.0018.png',
+        'img/lan_se.0019.png',
+        'img/lan_se.0020.png',
+        'img/lan_se.0021.png',
+        'img/lan_se.0022.png',
+        'img/lan_se.0023.png',
+        'img/lan_se.0024.png',
+        'img/lan_se.0025.png',
+        'img/lan_se.0026.png',
+        'img/lan_se.0027.png',
+        'img/lan_se.0028.png',
+        'img/lan_se.0029.png',
+        'img/lan_se.0030.png',
+        'img/lan_se.0031.png',
+        'img/lan_se.0032.png',
+        'img/lan_se.0033.png',
+        'img/lan_se.0034.png',
+        'img/lan_se.0035.png',
+        'img/lan_se.0036.png',
+        'img/lan_se.0037.png',
+        'img/lan_se.0038.png',
+        'img/lan_se.0039.png',
+        'img/lan_se.0040.png',
+        'img/lan_se.0041.png',
+        'img/lan_se.0042.png',
+        'img/lan_se.0043.png',
+        'img/lan_se.0044.png',
+        'img/lan_se.0045.png',
+        'img/lan_se.0046.png',
+        'img/lan_se.0047.png',
+        'img/lan_se.0048.png',
+        'img/lan_se.0049.png',
+        'img/lan_se.0050.png',
+        'img/lan_se.0051.png',
+        'img/lan_se.0052.png',
+        'img/lan_se.0053.png',
+        'img/lan_se.0054.png',
+        'img/lan_se.0055.png',
+        'img/lan_se.0056.png',
+        'img/lan_se.0057.png',
+        'img/lan_se.0058.png',
+        'img/lan_se.0059.png',
+        'img/lan_se.0060.png',
+        'img/lan_se.0061.png',
+        'img/lan_se.0062.png',
+        'img/lan_se.0063.png',
+        'img/lan_se.0064.png',
+        'img/lan_se.0065.png',
+        'img/lan_se.0066.png',
+        'img/lan_se.0067.png',
+        'img/lan_se.0068.png',
+        'img/lan_se.0069.png',
+        'img/lan_se.0070.png',
+        'img/lan_se.0071.png'
+    ];
+    var goldImgArr = [
+        'img/zong_se.0000.png',
+        'img/zong_se.0001.png',
+        'img/zong_se.0002.png',
+        'img/zong_se.0003.png',
+        'img/zong_se.0004.png',
+        'img/zong_se.0005.png',
+        'img/zong_se.0006.png',
+        'img/zong_se.0007.png',
+        'img/zong_se.0008.png',
+        'img/zong_se.0009.png',
+        'img/zong_se.0010.png',
+        'img/zong_se.0011.png',
+        'img/zong_se.0012.png',
+        'img/zong_se.0013.png',
+        'img/zong_se.0014.png',
+        'img/zong_se.0015.png',
+        'img/zong_se.0016.png',
+        'img/zong_se.0017.png',
+        'img/zong_se.0018.png',
+        'img/zong_se.0019.png',
+        'img/zong_se.0020.png',
+        'img/zong_se.0021.png',
+        'img/zong_se.0022.png',
+        'img/zong_se.0023.png',
+        'img/zong_se.0024.png',
+        'img/zong_se.0025.png',
+        'img/zong_se.0026.png',
+        'img/zong_se.0027.png',
+        'img/zong_se.0028.png',
+        'img/zong_se.0029.png',
+        'img/zong_se.0030.png',
+        'img/zong_se.0031.png',
+        'img/zong_se.0032.png',
+        'img/zong_se.0033.png',
+        'img/zong_se.0034.png',
+        'img/zong_se.0035.png',
+        'img/zong_se.0036.png',
+        'img/zong_se.0037.png',
+        'img/zong_se.0038.png',
+        'img/zong_se.0039.png',
+        'img/zong_se.0040.png',
+        'img/zong_se.0041.png',
+        'img/zong_se.0042.png',
+        'img/zong_se.0043.png',
+        'img/zong_se.0044.png',
+        'img/zong_se.0045.png',
+        'img/zong_se.0046.png',
+        'img/zong_se.0047.png',
+        'img/zong_se.0048.png',
+        'img/zong_se.0049.png',
+        'img/zong_se.0050.png',
+        'img/zong_se.0051.png',
+        'img/zong_se.0052.png',
+        'img/zong_se.0053.png',
+        'img/zong_se.0054.png',
+        'img/zong_se.0055.png',
+        'img/zong_se.0056.png',
+        'img/zong_se.0057.png',
+        'img/zong_se.0058.png',
+        'img/zong_se.0059.png',
+        'img/zong_se.0060.png',
+        'img/zong_se.0061.png',
+        'img/zong_se.0062.png',
+        'img/zong_se.0063.png',
+        'img/zong_se.0064.png',
+        'img/zong_se.0065.png',
+        'img/zong_se.0066.png',
+        'img/zong_se.0067.png',
+        'img/zong_se.0068.png',
+        'img/zong_se.0069.png',
+        'img/zong_se.0070.png',
+        'img/zong_se.0071.png'
+    ];
+    var silveryImgArr = [
+        'img/yin_se.0000.png',
+        'img/yin_se.0001.png',
+        'img/yin_se.0002.png',
+        'img/yin_se.0003.png',
+        'img/yin_se.0004.png',
+        'img/yin_se.0005.png',
+        'img/yin_se.0006.png',
+        'img/yin_se.0007.png',
+        'img/yin_se.0008.png',
+        'img/yin_se.0009.png',
+        'img/yin_se.0010.png',
+        'img/yin_se.0011.png',
+        'img/yin_se.0012.png',
+        'img/yin_se.0013.png',
+        'img/yin_se.0014.png',
+        'img/yin_se.0015.png',
+        'img/yin_se.0016.png',
+        'img/yin_se.0017.png',
+        'img/yin_se.0018.png',
+        'img/yin_se.0019.png',
+        'img/yin_se.0020.png',
+        'img/yin_se.0021.png',
+        'img/yin_se.0022.png',
+        'img/yin_se.0023.png',
+        'img/yin_se.0024.png',
+        'img/yin_se.0025.png',
+        'img/yin_se.0026.png',
+        'img/yin_se.0027.png',
+        'img/yin_se.0028.png',
+        'img/yin_se.0029.png',
+        'img/yin_se.0030.png',
+        'img/yin_se.0031.png',
+        'img/yin_se.0032.png',
+        'img/yin_se.0033.png',
+        'img/yin_se.0034.png',
+        'img/yin_se.0035.png',
+        'img/yin_se.0036.png',
+        'img/yin_se.0037.png',
+        'img/yin_se.0038.png',
+        'img/yin_se.0039.png',
+        'img/yin_se.0040.png',
+        'img/yin_se.0041.png',
+        'img/yin_se.0042.png',
+        'img/yin_se.0043.png',
+        'img/yin_se.0044.png',
+        'img/yin_se.0045.png',
+        'img/yin_se.0046.png',
+        'img/yin_se.0047.png',
+        'img/yin_se.0048.png',
+        'img/yin_se.0049.png',
+        'img/yin_se.0050.png',
+        'img/yin_se.0051.png',
+        'img/yin_se.0052.png',
+        'img/yin_se.0053.png',
+        'img/yin_se.0054.png',
+        'img/yin_se.0055.png',
+        'img/yin_se.0056.png',
+        'img/yin_se.0057.png',
+        'img/yin_se.0058.png',
+        'img/yin_se.0059.png',
+        'img/yin_se.0060.png',
+        'img/yin_se.0061.png',
+        'img/yin_se.0062.png',
+        'img/yin_se.0063.png',
+        'img/yin_se.0064.png',
+        'img/yin_se.0065.png',
+        'img/yin_se.0066.png',
+        'img/yin_se.0067.png',
+        'img/yin_se.0068.png',
+        'img/yin_se.0069.png',
+        'img/yin_se.0070.png',
+        'img/yin_se.0071.png'
+    ];
+    var whiteImgArr = [
+        'img/bai_se.0000.png',
+        'img/bai_se.0001.png',
+        'img/bai_se.0002.png',
+        'img/bai_se.0003.png',
+        'img/bai_se.0004.png',
+        'img/bai_se.0005.png',
+        'img/bai_se.0006.png',
+        'img/bai_se.0007.png',
+        'img/bai_se.0008.png',
+        'img/bai_se.0009.png',
+        'img/bai_se.0010.png',
+        'img/bai_se.0011.png',
+        'img/bai_se.0012.png',
+        'img/bai_se.0013.png',
+        'img/bai_se.0014.png',
+        'img/bai_se.0015.png',
+        'img/bai_se.0016.png',
+        'img/bai_se.0017.png',
+        'img/bai_se.0018.png',
+        'img/bai_se.0019.png',
+        'img/bai_se.0020.png',
+        'img/bai_se.0021.png',
+        'img/bai_se.0022.png',
+        'img/bai_se.0023.png',
+        'img/bai_se.0024.png',
+        'img/bai_se.0025.png',
+        'img/bai_se.0026.png',
+        'img/bai_se.0027.png',
+        'img/bai_se.0028.png',
+        'img/bai_se.0029.png',
+        'img/bai_se.0030.png',
+        'img/bai_se.0031.png',
+        'img/bai_se.0032.png',
+        'img/bai_se.0033.png',
+        'img/bai_se.0034.png',
+        'img/bai_se.0035.png',
+        'img/bai_se.0036.png',
+        'img/bai_se.0037.png',
+        'img/bai_se.0038.png',
+        'img/bai_se.0039.png',
+        'img/bai_se.0040.png',
+        'img/bai_se.0041.png',
+        'img/bai_se.0042.png',
+        'img/bai_se.0043.png',
+        'img/bai_se.0044.png',
+        'img/bai_se.0045.png',
+        'img/bai_se.0046.png',
+        'img/bai_se.0047.png',
+        'img/bai_se.0048.png',
+        'img/bai_se.0049.png',
+        'img/bai_se.0050.png',
+        'img/bai_se.0051.png',
+        'img/bai_se.0052.png',
+        'img/bai_se.0053.png',
+        'img/bai_se.0054.png',
+        'img/bai_se.0055.png',
+        'img/bai_se.0056.png',
+        'img/bai_se.0057.png',
+        'img/bai_se.0058.png',
+        'img/bai_se.0059.png',
+        'img/bai_se.0060.png',
+        'img/bai_se.0061.png',
+        'img/bai_se.0062.png',
+        'img/bai_se.0063.png',
+        'img/bai_se.0064.png',
+        'img/bai_se.0065.png',
+        'img/bai_se.0066.png',
+        'img/bai_se.0067.png',
+        'img/bai_se.0068.png',
+        'img/bai_se.0069.png',
+        'img/bai_se.0070.png',
+        'img/bai_se.0071.png'
+    ];
+
+    var totalImgArr = [blackImgArr,silveryImgArr,whiteImgArr,redImgArr,blueImgArr,goldImgArr];//把说有图片数组放到一个数组里面
+    var nowImgArr = totalImgArr[3];//默认第一个颜色设置为红色数组
+    $('.carColors a').on('click',function (ev) {//点击切花不同颜色的车图片
+
+       var $colorIndex = $('.carColors a').index($(this));
+       nowImgArr = totalImgArr[$colorIndex];//颜色对应数组
+       iNow = 0;//重置第一张显示图片
+       $('.changeImg').attr('src',nowImgArr[iNow]);//重置显示第一张图片
+    });
+
+
+    $('.cars-box').on('touchstart',function (ev) {
+        startX = ev.changedTouches[0].pageX;//记录开始位置
+    });
+    $('.cars-box').on('touchmove',function (ev) {
+        var nowPageX = ev.changedTouches[0].pageX;
+        var dis = nowPageX - startX;
+        if(dis>=0){
+            iNow --;
+            if(iNow<0){
+                iNow = 71;
+            }
+        }else{
+            iNow ++
+            if(iNow >71){
+                iNow = 0;
+            }
+        }
+        $('.changeImg').attr('src',nowImgArr[iNow]);
+
+        startX = nowPageX;//每次滑动结束吧上次滑动结束位置设置为开始位置
+    });
+
+
+    /*360旋转 end*/
+
+
+
+    /*全景图start*/
+
+    var quanJ_arr=[
+        'img/quanJ-red2.jpg',
+        'img/quanJ-black2.jpg',
+        'img/quanJ-beige2.jpg'
+    ];
+    $('.inner-btn').on('click',function () {
+        if($(this).attr('mode')==='outer'){
+            $('#content').fadeIn();
+            $('.carColors').css('display','none');
+            $('.innerColors').css('display','block');
+            loadPredefinedPanorama('img/quanJ-red2.jpg');
+            $(this).attr('mode','inner');
+            $('.innerBg').addClass('outerBg');
+
+
+            /*由于插件是异步的，那个点击全屏的按钮还没有创建好，等一段时间创建好了才能获取到这个元素*/
+            setTimeout(function () {
+                $('#fullScreenBtn').on('click',function () {
+                    if($('#container').height()>420){
+                        setTimeout(function () {
+                            loadPredefinedPanorama('img/quanJ-red2.jpg');
+                        },300)
+                    }
+                })
+            },800);
+        }else{
+            $('.carColors').fadeIn();
+            $('#content').css('display','none');
+            $('.innerColors').css('display','none');
+            $(this).attr('mode','outer');
+            $('.innerBg').removeClass('outerBg');
+        }
+
+
+    });
+
+
+    var $quanIndex = 0;
+    $('.innerColors a').on('click',function () {
+       var $quanIndex = $('.innerColors a').index($(this));
+       var src = quanJ_arr[$quanIndex];
+        loadPredefinedPanorama(src);
+        setTimeout(function () {
+            $('#fullScreenBtn').on('click',function () {
+                if($('#container').height()>420){
+                    setTimeout(function () {
+                        loadPredefinedPanorama(src);
+                    },300)
+                }
+            })
+        },800);
+    });
+    // Load the predefined panorama
+    function loadPredefinedPanorama(src) {
+        //evt.preventDefault();
+
+        var oDiv = document.getElementById('container');
+
+        new PhotoSphereViewer({
+            // Path to the panorama
+            panorama: src,
+
+            // Container
+            container: oDiv,
+
+            // Deactivate the animation
+            time_anim: false,
+
+            // Display the navigation bar
+            navbar: true,
+
+            allow_user_interactions:true,
+            autoload:true,
+
+            // Resize the panorama
+            size: {
+                width: '100%',
+                height: '420px'
+            }
+        });
+    }
+
+
+    /*全景图end*/
+</script>
+
+<!--swiper js-->
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var typeSwiper = new Swiper ('.typeCycle-box', {
+        direction: 'horizontal',
+        loop: false,
+        /*autoplay:2000,
+        loop:true,*/
+
+        // 如果需要前进后退按钮
+        nextButton: '.type-next-btn',
+        prevButton: '.type-prev-btn',
+
+    });
+    var powerSwiper = new Swiper ('.powerSwiper-box', {
+        direction: 'horizontal',
+        loop: false,
+        /*autoplay:2000,
+        loop:true,*/
+
+        // 如果需要前进后退按钮
+        nextButton: '.type-next-btn',
+        prevButton: '.type-prev-btn',
+
+    });
+    var interactiveSwiper = new Swiper ('.interactiveSwiper-box', {
+        direction: 'horizontal',
+        loop: false,
+        /*autoplay:2000,
+        loop:true,*/
+
+        // 如果需要前进后退按钮
+        nextButton: '.type-next-btn',
+        prevButton: '.type-prev-btn',
+
+    });
+    var leapfrogSwiper = new Swiper ('.leapfrogSwiper-box', {
+        direction: 'horizontal',
+        loop: false,
+        /*autoplay:2000,
+        loop:true,*/
+
+        // 如果需要前进后退按钮
+        nextButton: '.type-next-btn',
+        prevButton: '.type-prev-btn',
+
+    });
+    var securitySwiper = new Swiper ('.securitySwiper-box', {
+        direction: 'horizontal',
+        loop: false,
+        /*autoplay:2000,
+        loop:true,*/
+
+        // 如果需要前进后退按钮
+        nextButton: '.type-next-btn',
+        prevButton: '.type-prev-btn',
+
+    });
+
+    var swiperArr = [typeSwiper,powerSwiper,interactiveSwiper,leapfrogSwiper,securitySwiper];
+    var nowArr = swiperArr[0];
+    var $indexItem = 0;
+
+    /*swiper 弹出关闭*/
+    $('.click-itemBox').on('click',function (ev) {
+       var $indexClickBox = $('.click-itemBox').index($(this));
+
+       $indexItem = $('.click-itemBox').eq($indexClickBox).children().index(ev.target);
+
+       $('.swipers').eq($indexClickBox).css('display','block').siblings('.swipers').css('display','none');
+       nowArr = swiperArr[$indexClickBox];
+       $('.swiper-popBox').fadeIn();
+       $('.wrapAll').addClass('blurBg');
+        nowArr.update();
+        nowArr.slideTo($indexItem,0,false);
+    });
+
+
+
+    $('.popCloseBtn').on('click',function (ev) {
+       $('.swiper-popBox').fadeOut(1000);
+       $('.wrapAll').removeClass('blurBg');
+    });
+</script>
+</body>
+</html>
